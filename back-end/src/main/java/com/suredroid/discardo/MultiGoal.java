@@ -24,9 +24,6 @@ public class MultiGoal implements Goal
     }
 
     
-    
-    
-    
     public static void main(String[] args) {
         MultiGoal mg = new MultiGoal();
         mg.addGoal(new RunGoal());
