@@ -3,4 +3,6 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'discardo-api'
+rootProject.name = 'discardo-back-end'
+
+  

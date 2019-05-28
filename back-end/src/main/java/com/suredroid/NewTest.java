@@ -1,4 +1,6 @@
-import Test;
+package com.suredroid;
+
+import com.suredroid.discardo.Test;
 
 public class NewTest implements Test {
 

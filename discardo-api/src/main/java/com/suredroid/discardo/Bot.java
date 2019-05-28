@@ -1,12 +1,15 @@
 package com.suredroid.discardo;
 
+import com.suredroid.discardo.Goal;
+import com.suredroid.discardo.Player;
+
 /**
  * attempts to use Player's methods without calling init will throw a NPE
  */
 public class Bot implements Player
 {
 	private int[] hand;
-	private Goal  goal;
+	private Goal goal;
 	
 	//implicit constructor not shown
 

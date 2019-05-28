@@ -1,4 +1,7 @@
-package com.suredroid.discardo;
+package com.suredroid.unused;
+
+import com.suredroid.discardo.Goal;
+import com.suredroid.discardo.Player;
 
 import java.util.Random;
 
@@ -7,7 +10,7 @@ public class TerribleBot implements Player
 	public static final String NAME = "Mr. Bunn"; //name of bot implementer
 	
 	private int[] hand;
-	private Goal  goal;
+	private Goal goal;
 	
 	Random rng = new Random();
 	

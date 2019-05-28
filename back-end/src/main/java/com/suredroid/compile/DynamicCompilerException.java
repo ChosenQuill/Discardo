@@ -1,4 +1,4 @@
-package com.raulgomis.djc;
+package com.suredroid.compile;
 
 import javax.tools.Diagnostic;
 import javax.tools.JavaFileObject;

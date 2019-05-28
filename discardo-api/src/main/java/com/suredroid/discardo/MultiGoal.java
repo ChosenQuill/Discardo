@@ -1,7 +1,9 @@
 package com.suredroid.discardo;
+import com.suredroid.discardo.Goal;
+
 import java.util.*;
 
-public class MultiGoal implements Goal 
+public class MultiGoal implements Goal
 {
     private List<Goal> goals;
     
