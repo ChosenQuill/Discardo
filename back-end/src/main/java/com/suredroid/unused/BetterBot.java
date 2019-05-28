@@ -1,4 +1,9 @@
-package com.suredroid.discardo;
+package com.suredroid.unused;
+
+import com.suredroid.discardo.AllSameGoal;
+import com.suredroid.discardo.Goal;
+import com.suredroid.discardo.MultiGoal;
+import com.suredroid.discardo.Player;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +14,7 @@ public class BetterBot implements Player
 	public static final String NAME = "Mr. Bunn"; //name of bot implementer
 	
 	private int[] hand;
-	private Goal  goal;
+	private Goal goal;
 	
 	//implicit constructor not shown
 
@@ -48,7 +53,7 @@ public class BetterBot implements Player
 		List<Integer> sameGoalAmounts = new ArrayList<>();
 		
 		for (Goal g : multi.getGoals())
-			if (g instanceof AllSameGoal) 
+			if (g instanceof AllSameGoal)
 				sameGoalAmounts.add(((AllSameGoal) g).getGoalValue());
 
 		sameSteps = Math.min(this.nStepsFromAllSame(hand, card, sameGoalAmounts.get(0)),

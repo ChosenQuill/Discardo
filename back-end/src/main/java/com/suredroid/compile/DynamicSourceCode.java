@@ -1,4 +1,4 @@
-package com.raulgomis.djc;
+package com.suredroid.compile;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;

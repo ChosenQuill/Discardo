@@ -1,5 +1,11 @@
 package com.suredroid.discardo;
 
+import com.suredroid.discardo.AllSameGoal;
+import com.suredroid.discardo.Goal;
+import com.suredroid.discardo.Player;
+import com.suredroid.discardo.RunGoal;
+import com.suredroid.discardo.MultiGoal;
+
 /**
  * An average bot should take around 50 turns, given the original bot tester parameters
  */
@@ -8,10 +14,9 @@ public class BotTester
 	public static final int TESTS_PER_BOT = 1_000_000;
 	public static final int MAX_TURNS     = 4_000; //max turns allowed per game, for bad bots
 	
-//	public static void main(String[] args) {
-//		System.out.println("running tests");
-//		BotTester.test();
-//	}
+    public static void outputTest(Player Bot){
+        System.out.println("Player reached goal in avg. of " + test(Bot) + " turns");
+    }
 	
     public static double test(Player bot)
     {
