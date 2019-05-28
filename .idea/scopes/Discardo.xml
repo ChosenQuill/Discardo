@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Discardo" pattern="src:*..*" />
+</component>
