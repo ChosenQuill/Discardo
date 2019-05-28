@@ -13,7 +13,7 @@ public class BotTester
 //		BotTester.test();
 //	}
 	
-    public static void test(Player bot)
+    public static double test(Player bot)
     {
         int numCards = 5;
         
@@ -34,8 +34,9 @@ public class BotTester
         for (int i = 0; i < TESTS_PER_BOT; i++) {
         	totalTurns += play(bot, numCards, multi);
         }
-        
-        System.out.println("Player reached goal in avg. of " + ((double)totalTurns / TESTS_PER_BOT) + " turns");
+
+        //average
+        return ((double)totalTurns / TESTS_PER_BOT);
     }
 
     public static int play(Player p, int numCards, Goal goal)
@@ -52,7 +53,7 @@ public class BotTester
         while (!goal.hasWon(hand)) 
         {
         	if (numTurns == MAX_TURNS)
-        		throw new RuntimeException("Turn limit exceeded! Bot must eventually reach goal");
+        		return MAX_TURNS;
         	
             p.maybeReplaceCard(randomCard());
             numTurns++;
