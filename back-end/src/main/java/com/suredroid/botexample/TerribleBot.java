@@ -1,4 +1,4 @@
-package com.suredroid.unused;
+package com.suredroid.botexample;
 
 import com.suredroid.discardo.Goal;
 import com.suredroid.discardo.Player;

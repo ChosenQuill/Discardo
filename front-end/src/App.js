@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2019 SureDroid. Published under the GNU General Public Use License. See LICENSE.MD for more information.
+ */
+
 import React from 'react';
 import './App.css';
 import {createMuiTheme, CssBaseline} from "@material-ui/core";
@@ -23,6 +27,9 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
 import TableBody from "@material-ui/core/TableBody";
+
+// const mainUrl = "http://server.suredroid.com:5000/";
+const mainUrl = "http://localhost:5000/";
 
 const theme = createMuiTheme();
 
@@ -62,7 +69,7 @@ class LeaderBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {board: null};
-        fetch('http://localhost:5000/leaderboard')
+        fetch(mainUrl + 'leaderboard')
             .then(res => res.json())
             .then(board => this.setState({board: [...board]}))
             .then(res => console.log(this.state.board))
@@ -106,7 +113,8 @@ class LeaderBoard extends React.Component {
                 }
                 <Box mt={2} mb={1} mx={2}>
                     <Typography>
-                        Want to get on here and become the best? Submit your code <Link to='/submit'>here</Link> and learn how to join <Link to='/'>here</Link>.
+                        Want to get on here and become the best? Submit your code <Link to='/submit'>here</Link> and
+                        learn how to join <Link to='/'>here</Link>.
                     </Typography>
                 </Box>
             </Paper>
@@ -139,7 +147,8 @@ function Info() {
                     What is Discardo?
                 </Typography>
                 <Typography paragraph>
-                    Discardo is <b>the most popular</b> single player card game that everyone talks about. It includes
+                    Discardo is <b>the most popular</b> (yes, that's a fact) single player card game that everyone talks
+                    about. It includes
                     an infinite deck of numbered cards. Each card has a single number from 1 to 9 (inclusive), each
                     equally likely to occur.<br/>
                     The player is dealt a hand consisting of a predetermined number of cards. For example, the player
@@ -153,25 +162,44 @@ function Info() {
                     4].<br/>
                     The object of the game is to reach the goal in the fewest number of turns.
                 </Typography>
-                <Typography>
-                    <b>It is recommended you download and try to complete the <a href='/Discardo Project.zip' download>Discardo
+                <Typography paragraph>
+                    <b>It is highly recommended you download and try to complete the <a href='/Discardo Project.zip'
+                                                                                        download>Discardo
                         Project</a> beforehand to gain a deeper understanding of how it works. </b> <br/>
+                </Typography>
+                <Typography variant='h6'>
+                    How do I join/submit?
+                </Typography>
+                <Typography paragraph>
+                    Amazingly, there is no registration process required! That is right, its free to join and compete.
+                    So how do we submit? <b> First, you want to <a
+                    href='/DiscardoAPI.jar' download>download this jar file</a> and add it as an external
+                    jar.</b> (Don't
+                    know
+                    how? <a
+                    href='https://www.google.com/search?q=how+to+add+external+jar+in...&oq=how+to+add+external+jar+in...'
+                    target='_blank'> Search it up!</a>) When you do, you will have access to all necessary files by
+                    importing them. All goals are provided along with the player interface. (You have to use this
+                    opposed to the Discardo project files.) Use `BotTester.outputTest()` to
+                    test your bot. When you are done and want to send it online, go to submit, and copy paste your code
+                    from the class that implements the player interface. Click submit and wait for results.
+                </Typography>
+                <Typography variant='h6'>
+                    Who created this site and how?
+                </Typography>
+                <Typography>
+                    The code to run this site was created by an avid coder enthusiast named <b>Rithvik S</b>. It uses
+                    numerous coding languages such as Java, Html, Css, Javascript and numerous dev/web technologies such
+                    as Spring Boot, Rest-Api, ReactJS, JSX, Gradle, Regex, etc. to work. The site took about two weeks
+                    (over 32 hours) to complete. The <a
+                    href='https://www.github.com/SureDroid/Discardo' target='_blank'>source code</a> is publicly
+                    available to view on GitHub. He also runs a site, check it out at <a
+                    href='https://www.suredroid.com' target='_blank'>suredroid.com</a>.
                 </Typography>
             </Box>
         </Paper>
     );
 }
-
-const code =
-    "import com.suredroid.discardo.Test;\n" +
-    "\n" +
-    "public class NewTest implements Test {\n" +
-    "\n" +
-    "    @Override\n" +
-    "    public String doSomething() {\n" +
-    "        return \"Value\";\n" +
-    "    }\n" +
-    "}\n";
 
 
 function Submit(props) {
@@ -191,12 +219,11 @@ function Submit(props) {
                     multiline
                     fullWidth
                     rows={12}
-                    rowsMax={48}
+                    rowsMax={28}
                     margin="normal"
                     variant="outlined"
                     error={props.error}
                     helperText={props.helper}
-                    defaultValue={code}
                 />
                 <Box mb={1}/>
                 <Button variant='contained' onClick={props.submitCode}>
@@ -207,6 +234,21 @@ function Submit(props) {
     );
 };
 
+function Unknown() {
+    return (
+        <Paper className="paper">
+            <Box my={1} mx={2}>
+                <Typography variant='h2' gutterBottom>
+                    404 Page Not Found
+                </Typography>
+                <Typography variant='h4'>
+                    The page you are looking for was not found. :( <br/>
+                    Head back to <Link to='/'>Home</Link>.
+                </Typography>
+            </Box>
+        </Paper>
+    )
+}
 
 class App extends React.Component {
 
@@ -230,7 +272,7 @@ class App extends React.Component {
         const name = document.getElementById("name").value;
 
         if (code && name) {
-            const url = new URL("http://localhost:5000/submit");
+            const url = new URL(mainUrl + "submit");
             url.searchParams.append("code", code);
             url.searchParams.append("name", name);
             fetch(url).then(response =>
@@ -253,7 +295,7 @@ class App extends React.Component {
                         break;
                     case 200:
                         status = "Success. The code is being processed.";
-                        let url = new URL("http://localhost:5000/status");
+                        let url = new URL(mainUrl + "status");
                         url.searchParams.append("name", name);
                         fetch(url).then(response => Promise.all([response.status, response.json()])
                             .then(promise => {
@@ -348,6 +390,7 @@ class App extends React.Component {
                     <Route exact path='/leaderboard' component={LeaderBoard}/>
                     <Route exact path='/submit'
                            render={(props) => <Submit {...props} {...this.state} submitCode={this.submitCode}/>}/>
+                    <Route component={Unknown}/>
                 </Switch>
 
                 <Dialog
