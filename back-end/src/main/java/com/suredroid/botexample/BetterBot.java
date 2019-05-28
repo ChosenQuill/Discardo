@@ -1,4 +1,4 @@
-package com.suredroid.unused;
+package com.suredroid.botexample;
 
 import com.suredroid.discardo.AllSameGoal;
 import com.suredroid.discardo.Goal;
