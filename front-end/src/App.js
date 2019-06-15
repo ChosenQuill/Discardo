@@ -28,7 +28,6 @@ import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
 import TableBody from "@material-ui/core/TableBody";
 
-// const mainUrl = "http://server.suredroid.com:5000/";
 const mainUrl = "http://localhost:5000/";
 
 const theme = createMuiTheme();

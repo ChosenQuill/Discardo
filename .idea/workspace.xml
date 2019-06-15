@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/front-end/src/App.js" line="317" />
+    <bookmark url="file://$PROJECT_DIR$/front-end/src/App.js" line="316" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95446f2c-99d0-4289-aab6-786ee1cbceba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/discardo/AllSameGoal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/discardo/Bot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/discardo/BotTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/discardo/Goal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/discardo/MultiGoal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/discardo/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/discardo/RunGoal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/botexample/TerribleBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/botexample/TerribleBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discardo-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discardo-api/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/back-end/.gradle/" />
@@ -129,11 +107,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-end/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="279" column="31" selection-start-line="279" selection-start-column="31" selection-end-line="279" selection-end-column="31" />
+            <state relative-caret-position="425">
+              <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#130#156#0" expanded="true" />
@@ -151,15 +129,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back-end/src/main/java/com/suredroid/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            <state relative-caret-position="148">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3490#3491#0" expanded="true" />
-                <element signature="e#4407#4408#0" expanded="true" />
+                <element signature="e#3488#3489#0" expanded="true" />
+                <element signature="e#4405#4406#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back-end/src/main/java/com/suredroid/botexample/TerribleBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-end-line="33" />
+            <state relative-caret-position="204">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -321,8 +299,8 @@
         <option value="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/Main.java" />
         <option value="$PROJECT_DIR$/back-end/build.gradle" />
         <option value="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/botexample/TerribleBot.java" />
-        <option value="$PROJECT_DIR$/front-end/src/App.js" />
         <option value="$PROJECT_DIR$/back-end/src/main/java/com/suredroid/Controller.java" />
+        <option value="$PROJECT_DIR$/front-end/src/App.js" />
       </list>
     </option>
   </component>
@@ -705,7 +683,7 @@
       <workItem from="1559627175591" duration="2977000" />
       <workItem from="1560197646984" duration="237000" />
       <workItem from="1560552793156" duration="2497000" />
-      <workItem from="1560555372753" duration="8434000" />
+      <workItem from="1560555372753" duration="9035000" />
     </task>
     <servers />
   </component>
@@ -724,7 +702,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125890000" />
+    <option name="totallyTimeSpent" value="126491000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -737,7 +715,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23662631" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -751,14 +728,14 @@
       <window_info id="Learn" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49980476" visible="true" weight="0.2863706" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49980476" weight="0.2863706" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969603" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32312405" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32969603" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29402757" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29402757" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50019526" side_tool="true" weight="0.39586523" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -1100,10 +1077,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/com/suredroid/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3488#3489#0" expanded="true" />
+            <element signature="e#4405#4406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/back-end/src/main/java/com/suredroid/botexample/TerribleBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-end-line="33" />
+        <state relative-caret-position="204">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1112,23 +1101,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front-end/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="279" column="31" selection-start-line="279" selection-start-column="31" selection-end-line="279" selection-end-column="31" />
+        <state relative-caret-position="425">
+          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#130#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back-end/src/main/java/com/suredroid/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3490#3491#0" expanded="true" />
-            <element signature="e#4407#4408#0" expanded="true" />
           </folding>
         </state>
       </provider>
