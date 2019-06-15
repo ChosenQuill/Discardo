@@ -2,14 +2,10 @@ package com.suredroid;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.suredroid.botexample.TerribleBot;
-import com.suredroid.discardo.BotTester;
-import com.suredroid.discardo.Goal;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.*;
-import java.lang.reflect.Type;
 import java.util.Optional;
 
 @SpringBootApplication
@@ -18,7 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 		if(args.length > 0 && args[0].equals("debug"))
 			debug = true;
-		System.out.println(Goal.class.getPackage().toString());
+
 		SpringApplication.run(Main.class, args);
 	}
 

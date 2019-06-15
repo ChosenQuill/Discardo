@@ -7,6 +7,8 @@
     <bytecodeTargetLevel>
       <module name="back-end.main" target="11" />
       <module name="back-end.test" target="11" />
+      <module name="discardo-back-end_main" target="11" />
+      <module name="discardo-back-end_test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

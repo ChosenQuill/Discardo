@@ -42,6 +42,9 @@ public class Controller {
             return ResponseEntity.status(470).body("Requested params for query were not given. If this error is shown, something has gone terribly wrong.\nIf the error persists after Rereload, report this to support@suredroid.com and your teacher.");
         try {
             Matcher m = className.matcher(code);
+            if(code.contains("package")) {
+                return ResponseEntity.badRequest().body("Packages are not supported yet. Please remove the package line from your code submission.");
+            }
             DynamicCompiler<Player> compiler = new DynamicCompiler<>();
             if (m.find()) {
                 Player supplier = compiler.compile(null, m.group(1), code).getDeclaredConstructor().newInstance();

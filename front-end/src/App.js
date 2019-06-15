@@ -278,7 +278,6 @@ class App extends React.Component {
             fetch(url).then(response =>
                 Promise.all([response.status, response.text()])
             ).then(promise => {
-                console.log(promise[0]);
                 let text = promise[1].split('\n').map((item, i) => {
                         return <span key={i} className='line'>{item}</span>;
                     }),
@@ -300,7 +299,6 @@ class App extends React.Component {
                         fetch(url).then(response => Promise.all([response.status, response.json()])
                             .then(promise => {
                                 let body = promise[1];
-                                console.log(promise[0]);
                                 if (promise[0] !== 200) {
                                     body.title = "Oh no, an unknown error!";
                                     body.text = "The server is most likely down. Report this error to support@suredroid.com and to your teacher.";

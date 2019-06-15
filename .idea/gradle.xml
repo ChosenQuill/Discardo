@@ -12,7 +12,7 @@
         </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/back-end" />
-        <option name="gradleHome" value="C:/Gradle/gradle-5.1.1" />
+        <option name="gradleHome" value="C:/Gradle/gradle-5.4.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/back-end" />
