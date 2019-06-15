@@ -1,5 +1,6 @@
 plugins {
-    id 'java'
+    id 'application'
+    id 'org.springframework.boot' version '2.1.5.RELEASE'
 }
 
 group 'com.suredroid.discardo'
@@ -14,3 +15,5 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
+
+mainClassName = 'com.suredroid.Main'

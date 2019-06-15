@@ -5,4 +5,4 @@ pluginManagement {
 }
 rootProject.name = 'discardo-back-end'
 
-includeBuild '../discardo-api'
+//includeBuild '../discardo-api'
