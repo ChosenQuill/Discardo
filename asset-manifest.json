@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./Discardo/static/css/main.19e0f645.chunk.css",
-    "main.js": "./Discardo/static/js/main.a0b15286.chunk.js",
-    "main.js.map": "./Discardo/static/js/main.a0b15286.chunk.js.map",
-    "runtime~main.js": "./Discardo/static/js/runtime~main.178eec0d.js",
-    "runtime~main.js.map": "./Discardo/static/js/runtime~main.178eec0d.js.map",
-    "static/js/2.39cb325d.chunk.js": "./Discardo/static/js/2.39cb325d.chunk.js",
-    "static/js/2.39cb325d.chunk.js.map": "./Discardo/static/js/2.39cb325d.chunk.js.map",
-    "index.html": "./Discardo/index.html",
-    "precache-manifest.79d49d0c2336c23336b3f469c115cadc.js": "./Discardo/precache-manifest.79d49d0c2336c23336b3f469c115cadc.js",
-    "service-worker.js": "./Discardo/service-worker.js",
-    "static/css/main.19e0f645.chunk.css.map": "./Discardo/static/css/main.19e0f645.chunk.css.map"
+    "main.css": "./static/css/main.19e0f645.chunk.css",
+    "main.js": "./static/js/main.424da4fc.chunk.js",
+    "main.js.map": "./static/js/main.424da4fc.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/js/2.39cb325d.chunk.js": "./static/js/2.39cb325d.chunk.js",
+    "static/js/2.39cb325d.chunk.js.map": "./static/js/2.39cb325d.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.de0bcadcb394a7913fbc32f8ed08789e.js": "./precache-manifest.de0bcadcb394a7913fbc32f8ed08789e.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.19e0f645.chunk.css.map": "./static/css/main.19e0f645.chunk.css.map"
   }
 }
