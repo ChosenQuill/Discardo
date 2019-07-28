@@ -8,5 +8,3 @@
 // In the end, it should look like "http://example.com:5000/" or "http://127.0.0.1:5000/".
 var serverAddress = "http://localhost:5000/";
 
-// Change the basename to whatever you want the subfolder of your website to be. The default is /Discardo, or the default subdirectory when you fork the Discardo repository.
-var baseName = "/Discardo";
