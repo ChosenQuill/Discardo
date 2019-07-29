@@ -7,7 +7,7 @@ Discardo itself is a simple single player card game. The goal of the origional J
 While this repository/project is made primarily for Java teachers who want to provide their students with a fun competition, anyone can use this guide to host their own competition.
 
 ## How to host a competition
-First, head over to the [releases page](https://github.com/SureDroid/Discardo/releases) and download both the backend jar file and web-files zip folder. The Jar file is the backend that processes all the code submissions and stores leaderboard information. The front-end is the website and is what everyone sees. The nice part is that we can host the jar and website on two seperate server, making it way easier to host (you don't have to setup things yourself).
+First, head over to the [releases page](https://github.com/SureDroid/Discardo/releases) and download the backend jar file. The Jar file is the backend java program that processes all the code submissions and stores leaderboard information. The front-end is the website and is what everyone sees. The nice part is that we can host the jar and website on two seperate server, making it way easier to host (you don't have to setup things yourself).
 
 ### First, hosting the jar. 
 You want to make sure that you have java 11 or higher installed. You can test this by using ``java -version``. Then you want to start the jar by running ``java -jar discardo-back-end-x.jar`` in a command prompt window, and replace the x with the current version number. I should mention that if you close the window or stop the java application, the leaderboard is completely reset and there is no way to restore it. 
@@ -19,7 +19,7 @@ If you are making it accessable from outside your local network, the next step i
 If you don't want it accessable outside your network, you just need to grab your ipv4 address. You can do that by opening a command prompt and typing ipconfig. Find ipv4 and write that number down.
 
 ### Now on to the website.
-There are a number of ways that you can host a website, but I will be explaining the easiest way. There is a drawback to this method (and I will tell you later), but it should simplify a lot of the steps of hosting a website.
+There are a numerous amount of ways to host websites. This project has been configured best to work with Github Pages (for easy hosting), but you can host it however you like and wherever you like using the provided website files on the [releases page](https://github.com/SureDroid/Discardo/releases). I will be explaining to you how to host it easily though Github pages.
 
 The first thing you want to do is click on the fork button on the top of this page.
 
@@ -40,6 +40,5 @@ Then change the Source from None, to Gh-Pages.
 
 Now you should be set. The site should be published on the link provided.
 
-#### The Main Drawback
-Now I mentioned that there is an issue with this method earlier, and here it is.
-You cannot give links to subfolders (pages other than the root page). What I mean by that is putting you.github.io/discardo/leaderboard in your url bar or sending that link to someone else won't work. You have to go to you.github.io/discardo (the root site), then click on the leaderboard button to go to the leaderboard, and only then you can view the leaderboard. This is due to the way that github directs queries to access files. To avoid this issue, I used a custom nginx config file which you can find [here](https://github.com/SureDroid/Discardo/blob/master/discardo.conf). 
+#### Notice
+There used to be a drawback where you couldn't give links to subpages (subfolders) due to the way that Github directs its queries, but this has now been changed and improved in the latest update through HashRouting (the single page manages all subpages through hash anchoring (fragment)). 

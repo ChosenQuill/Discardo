@@ -27,8 +27,9 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
 import TableBody from "@material-ui/core/TableBody";
+import CustomSnackBar from "./CustomSnackBar";
 
-const mainUrl = "http://localhost:5000/";
+const mainUrl = window.serverAddress;
 
 const theme = createMuiTheme();
 
@@ -64,15 +65,26 @@ function Bar(props) {
 
 }
 
+function checkAlive(){
+    const timeout = new Promise((resolve, reject) => {
+        setTimeout(reject, 300, 'Request timed out');
+    });
+
+    const request = fetch(mainUrl);
+
+    return Promise
+        .race([timeout, request])
+}
+
 class LeaderBoard extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {board: null};
+        this.state = {board: []};
+
         fetch(mainUrl + 'leaderboard')
             .then(res => res.json())
             .then(board => this.setState({board: [...board]}))
-            .then(res => console.log(this.state.board))
-            .catch(err => console.log(err));
+            .catch(err => console.log(err))
     }
 
     render() {
@@ -85,7 +97,7 @@ class LeaderBoard extends React.Component {
                     </Typography>
 
                 </Box>
-                {(this.state.board) &&
+
                 <Table>
                     <TableHead>
                         <TableRow>
@@ -109,7 +121,7 @@ class LeaderBoard extends React.Component {
                         }
                     </TableBody>
                 </Table>
-                }
+
                 <Box mt={2} mb={1} mx={2}>
                     <Typography>
                         Want to get on here and become the best? Submit your code <Link to='/submit'>here</Link> and
@@ -120,6 +132,12 @@ class LeaderBoard extends React.Component {
         );
     }
 }
+
+const SnackBarStyles = makeStyles({
+    close: {
+        padding: theme.spacing(0.5),
+    },
+});
 
 function Info() {
     return (
@@ -259,8 +277,11 @@ class App extends React.Component {
                 title: "N/A",
                 text: "N/A",
             },
+            down: false
         };
-        this.current = 0;
+
+        checkAlive()
+            .catch(()=>this.setState({down:true}));
         this.submitCode = this.submitCode.bind(this);
         this.closePopup = this.closePopup.bind(this);
         this.props = props;
@@ -389,6 +410,13 @@ class App extends React.Component {
                            render={(props) => <Submit {...props} {...this.state} submitCode={this.submitCode}/>}/>
                     <Route component={Unknown}/>
                 </Switch>
+
+                {  this.state.down &&
+                <Box width="400px" m={2.5} >
+                    <CustomSnackBar variant="error"
+                                    message="The competition is not in progress (Server is offline)."/>
+                </Box>
+                }
 
                 <Dialog
                     open={this.state.open}
