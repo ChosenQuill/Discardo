@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95446f2c-99d0-4289-aab6-786ee1cbceba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front-end/public/404.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/public/Config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/public/Config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -368,7 +367,7 @@
       <workItem from="1561458032180" duration="55000" />
       <workItem from="1561628560083" duration="514000" />
       <workItem from="1564349735668" duration="9014000" />
-      <workItem from="1569472106807" duration="239000" />
+      <workItem from="1569472106807" duration="1644000" />
     </task>
     <servers />
   </component>
