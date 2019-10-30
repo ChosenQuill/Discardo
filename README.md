@@ -39,6 +39,3 @@ Then change the Source from None, to Gh-Pages.
 ![GH-Pages Settings](https://image.prntscr.com/image/IagrG1ZJTS_wzlBaCq4A2w.png)
 
 Now you should be set. The site should be published on the link provided.
-
-#### Notice
-There used to be a drawback where you couldn't give links to subpages (subfolders) due to the way that Github directs its queries, but this has now been changed and improved in the latest update through HashRouting (the single page manages all subpages through hash anchoring (fragment)). 
